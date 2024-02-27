@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testCase.TC_001_NewBikeTest">
+        <methods>
+          <include name="usedCars_dropdown"/>
+          <include name="tearDown"/>
+          <include name="manufacture_select"/>
+          <include name="newBike"/>
+          <include name="call_select_channai"/>
+          <include name="Email_input"/>
+          <include name="call_popular_cars"/>
+          <include name="clickLoad"/>
+          <include name="NavigateBackto"/>
+          <include name="scrolldown"/>
+          <include name="scroll_popularcars"/>
+          <include name="Error_Msg"/>
+          <include name="Details"/>
+          <include name="NavigateBack"/>
+          <include name="click_login"/>
+          <include name="setup"/>
+          <include name="Handle_Frame"/>
+          <include name="upcomingBike"/>
+          <include name="click_Google"/>
+        </methods>
+      </class> <!-- testCase.TC_001_NewBikeTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
