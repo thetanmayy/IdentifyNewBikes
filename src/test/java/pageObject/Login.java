@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 import utilities.For_ReadWriteExcel;
@@ -19,14 +20,14 @@ public class Login extends BasePage{
 		
 	}
 	
-	@FindBy(xpath = "//div[@id='des_lIcon']") 
-	WebElement LoginButton;
+	@FindBy(xpath = "//img[@id='forum_login_cover_image_sm']")  ////img[@id='forum_login_cover_image_sm'] //div[@id='des_lIcon']
+	public static WebElement LoginButton;
 	
 	@FindBy(xpath = "//span[contains(text(),'Google')]")  
-	WebElement GoogleButton;
+	public static WebElement GoogleButton;
 	
 	@FindBy(xpath = "//input[@type='email']")
-	WebElement inputEmail;
+	public static WebElement inputEmail;
 	
 	String ErrorMsg;
 	
@@ -37,7 +38,9 @@ public class Login extends BasePage{
 	
 	public void clickLogin()
 	{
-		LoginButton.click();
+		Actions action=new Actions(driver);
+		action.moveToElement(LoginButton).click().perform();
+		//LoginButton.click();
 	}
 	public void clickGoogle()
 	{

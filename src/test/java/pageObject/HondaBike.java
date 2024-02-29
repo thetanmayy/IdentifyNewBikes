@@ -122,9 +122,8 @@ public class HondaBike extends BasePage{
 		
 		
 		}
-		System.out.println(bikenames);
-		System.out.println(bikePrice);
-		System.out.println(launchDate1);
+		
+		//Displaying the data in an excel file
 		For_ReadWriteExcel.writeBikenames(bikenames,filepath);
 		For_ReadWriteExcel.writebikePrice(bikePrice,filepath);
 		For_ReadWriteExcel.writelaunchDate(launchDate1,filepath);

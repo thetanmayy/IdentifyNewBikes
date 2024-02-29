@@ -47,7 +47,7 @@ public class Extentreports implements ITestListener {
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
 		try {
-			String imgPath = "./Screenshot/"+result.getName()+".png";
+			String imgPath = "../Screenshot/"+result.getName()+".png";
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e1) {
 			e1.printStackTrace();
@@ -59,7 +59,7 @@ public class Extentreports implements ITestListener {
 		test.log(Status.FAIL,result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		try {
-			String imgPath = "./Screenshot/"+result.getName()+".png" ;
+			String imgPath = "../Screenshot/"+result.getName()+".png" ;
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e1) {
 			e1.printStackTrace();
@@ -71,7 +71,7 @@ public class Extentreports implements ITestListener {
 		test.log(Status.SKIP, result.getName()+" got skipped");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		try {
-			String imgPath = "./Screenshot/"+result.getName()+".png";
+			String imgPath = "../Screenshot/"+result.getName()+".png";
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e1) {
 			e1.printStackTrace();

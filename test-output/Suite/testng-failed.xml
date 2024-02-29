@@ -5,12 +5,24 @@
     <listener class-name="utilities.Extentreports"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testCase.TC_001_NewBikeTest">
         <methods>
           <include name="tearDown"/>
+          <include name="manufacture_select"/>
           <include name="newBike"/>
+          <include name="Email_input"/>
+          <include name="clickLoad"/>
+          <include name="NavigateBackto"/>
+          <include name="scrolldown"/>
+          <include name="Error_Msg"/>
+          <include name="NavigateBack"/>
+          <include name="click_login"/>
           <include name="setup"/>
+          <include name="upcomingBike"/>
+          <include name="click_Google"/>
         </methods>
       </class> <!-- testCase.TC_001_NewBikeTest -->
     </classes>

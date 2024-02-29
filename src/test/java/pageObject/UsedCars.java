@@ -1,11 +1,17 @@
 package pageObject;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+
+import utilities.For_ReadWriteExcel;
 
 public class UsedCars extends BasePage{
 	public String datastr[];
@@ -15,17 +21,20 @@ public class UsedCars extends BasePage{
 		
 	}
 	
-	@FindBy(xpath = "(//a[@class='c-p'])[4]") 
-	WebElement usedCar;
+	@FindBy(xpath = "(//a[@class='c-p'])[4]")
+	public static WebElement usedCar;
 	
 	@FindBy(xpath = "//span[@onclick=\"goToUrl('/used-car/Chennai')\"]")  ///(//span[contains(text(),'Chennai')]
-	WebElement city_Chennai;
+	public static WebElement city_Chennai;
 	
 	@FindBy(xpath = "//div[contains(text(),'Popular Models')]")
-	WebElement scrollpop;
+	public static WebElement scrollpop;
 	
 	@FindBy(xpath = "//div[@class='gsc_thin_scroll']")
-	String popularModel;
+	public static WebElement popularModelweb;
+	
+	@FindBy(xpath = "//div[@class='gsc_thin_scroll']")
+	public static String popularModel;
 	
 	//****************************************************************************************//
                                       //ACTION METHODS//
@@ -49,9 +58,19 @@ public class UsedCars extends BasePage{
 	}
 	public void display_cars()
 	{
-		
+		String filepath = System.getProperty("user.dir")+"./src/main/resources/test_OP_data.xlsx";
     	popularModel=driver.findElement(By.xpath("//div[@class='gsc_thin_scroll']")).getText();//extracting all popular models
+    	List<String> usedCarsList = new ArrayList<String>();
+    	String[] pm = popularModel.split("\\n");
+    	for (int i = 0; i<pm.length; i++) {
+    		usedCarsList.add(pm[i]);
+    	}
     	System.out.println("Popular Models of Used Cars in Chennai\n\n"+popularModel);
+    	try {
+			For_ReadWriteExcel.writeUsedCars(usedCarsList, filepath);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}
 	
