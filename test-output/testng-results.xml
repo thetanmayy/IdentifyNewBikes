@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T14:35:53 IST" name="Suite" finished-at="2024-02-29T14:36:59 IST" duration-ms="65275">
+  <suite started-at="2024-03-04T15:20:11 IST" name="Suite" finished-at="2024-03-04T15:23:41 IST" duration-ms="210009">
     <groups>
     </groups>
-    <test started-at="2024-02-29T14:35:53 IST" name="Test" finished-at="2024-02-29T14:36:59 IST" duration-ms="65275">
+    <test started-at="2024-03-04T15:20:11 IST" name="Test" finished-at="2024-03-04T15:23:41 IST" duration-ms="210009">
       <class name="testCase.TC_001_NewBikeTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:35:54 IST" name="setup" finished-at="2024-02-29T14:36:12 IST" duration-ms="17357" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:20:11 IST" name="setup" finished-at="2024-03-04T15:21:24 IST" duration-ms="73317" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,75 +23,146 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="newBike()[pri:1, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:12 IST" name="newBike" finished-at="2024-02-29T14:36:14 IST" duration-ms="2391" status="PASS">
+        <test-method signature="newBike()[pri:1, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:21:24 IST" name="newBike" finished-at="2024-03-04T15:21:25 IST" duration-ms="949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBike -->
-        <test-method signature="upcomingBike()[pri:2, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:14 IST" name="upcomingBike" finished-at="2024-02-29T14:36:23 IST" duration-ms="9144" status="PASS">
+        <test-method signature="upcomingBike()[pri:2, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:21:25 IST" name="upcomingBike" finished-at="2024-03-04T15:22:02 IST" duration-ms="36998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- upcomingBike -->
-        <test-method signature="manufacture_select()[pri:3, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:23 IST" name="manufacture_select" finished-at="2024-02-29T14:36:26 IST" duration-ms="3040" status="PASS">
+        <test-method signature="manufacture_select()[pri:3, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:02 IST" name="manufacture_select" finished-at="2024-03-04T15:22:09 IST" duration-ms="6624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- manufacture_select -->
-        <test-method signature="scrolldown()[pri:4, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:26 IST" name="scrolldown" finished-at="2024-02-29T14:36:28 IST" duration-ms="1551" status="PASS">
+        <test-method signature="scrolldown()[pri:4, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:09 IST" name="scrolldown" finished-at="2024-03-04T15:22:10 IST" duration-ms="885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrolldown -->
-        <test-method signature="clickLoad()[pri:5, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:28 IST" name="clickLoad" finished-at="2024-02-29T14:36:29 IST" duration-ms="915" status="PASS">
+        <test-method signature="clickLoad()[pri:5, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:10 IST" name="clickLoad" finished-at="2024-03-04T15:22:11 IST" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickLoad -->
-        <test-method signature="Details()[pri:6, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:29 IST" name="Details" finished-at="2024-02-29T14:36:35 IST" duration-ms="5625" status="PASS">
+        <test-method signature="Details()[pri:6, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:11 IST" name="Details" finished-at="2024-03-04T15:22:15 IST" duration-ms="4668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Details -->
-        <test-method signature="NavigateBack()[pri:7, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:35 IST" name="NavigateBack" finished-at="2024-02-29T14:36:38 IST" duration-ms="3487" status="PASS">
+        <test-method signature="NavigateBack()[pri:7, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:15 IST" name="NavigateBack" finished-at="2024-03-04T15:22:17 IST" duration-ms="1259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateBack -->
-        <test-method signature="usedCars_dropdown()[pri:8, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:38 IST" name="usedCars_dropdown" finished-at="2024-02-29T14:36:39 IST" duration-ms="847" status="PASS">
+        <test-method signature="usedCars_dropdown()[pri:8, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:17 IST" name="usedCars_dropdown" finished-at="2024-03-04T15:22:18 IST" duration-ms="1347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- usedCars_dropdown -->
-        <test-method signature="call_select_channai()[pri:9, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:39 IST" name="call_select_channai" finished-at="2024-02-29T14:36:45 IST" duration-ms="6471" status="PASS">
+        <test-method signature="call_select_channai()[pri:9, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:18 IST" name="call_select_channai" finished-at="2024-03-04T15:22:52 IST" duration-ms="34436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- call_select_channai -->
-        <test-method signature="scroll_popularcars()[pri:10, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:45 IST" name="scroll_popularcars" finished-at="2024-02-29T14:36:46 IST" duration-ms="686" status="PASS">
+        <test-method signature="scroll_popularcars()[pri:10, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:52 IST" name="scroll_popularcars" finished-at="2024-03-04T15:22:53 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scroll_popularcars -->
-        <test-method signature="call_popular_cars()[pri:11, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:46 IST" name="call_popular_cars" finished-at="2024-02-29T14:36:47 IST" duration-ms="614" status="PASS">
+        <test-method signature="call_popular_cars()[pri:11, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:53 IST" name="call_popular_cars" finished-at="2024-03-04T15:22:53 IST" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- call_popular_cars -->
-        <test-method signature="NavigateBackto()[pri:12, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:47 IST" name="NavigateBackto" finished-at="2024-02-29T14:36:49 IST" duration-ms="2006" status="PASS">
+        <test-method signature="NavigateBackto()[pri:12, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:53 IST" name="NavigateBackto" finished-at="2024-03-04T15:22:54 IST" duration-ms="1157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateBackto -->
-        <test-method signature="click_login()[pri:13, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:49 IST" name="click_login" finished-at="2024-02-29T14:36:50 IST" duration-ms="1099" status="PASS">
+        <test-method signature="click_login()[pri:13, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:54 IST" name="click_login" finished-at="2024-03-04T15:22:55 IST" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_login -->
-        <test-method signature="click_Google()[pri:14, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:50 IST" name="click_Google" finished-at="2024-02-29T14:36:51 IST" duration-ms="1477" status="PASS">
+        <test-method signature="click_Google()[pri:14, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:55 IST" name="click_Google" finished-at="2024-03-04T15:22:57 IST" duration-ms="1544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Google -->
-        <test-method signature="Handle_Frame()[pri:15, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:51 IST" name="Handle_Frame" finished-at="2024-02-29T14:36:54 IST" duration-ms="2392" status="PASS">
+        <test-method signature="Handle_Frame()[pri:15, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:22:57 IST" name="Handle_Frame" finished-at="2024-03-04T15:23:28 IST" duration-ms="30666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Handle_Frame -->
-        <test-method signature="Email_input()[pri:16, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:54 IST" name="Email_input" finished-at="2024-02-29T14:36:56 IST" duration-ms="2650" status="PASS">
+        <test-method signature="Email_input()[pri:16, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:23:28 IST" name="Email_input" finished-at="2024-03-04T15:23:29 IST" duration-ms="1603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Email_input -->
-        <test-method signature="Error_Msg()[pri:17, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:56 IST" name="Error_Msg" finished-at="2024-02-29T14:36:57 IST" duration-ms="788" status="PASS">
+        <test-method signature="Error_Msg()[pri:17, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:23:29 IST" name="Error_Msg" finished-at="2024-03-04T15:23:39 IST" duration-ms="10040" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter a valid')]"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ceb0cc4d17114523917116c1759bbe9, findElement {using=xpath, value=//div[contains(text(),'Enter a valid')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53190/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ceb0cc4d17114523917116c1759bbe9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter a valid')]"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ceb0cc4d17114523917116c1759bbe9, findElement {using=xpath, value=//div[contains(text(),'Enter a valid')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53190/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ceb0cc4d17114523917116c1759bbe9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at pageObject.Login.show_error(Login.java:77)
+at testCase.TC_001_NewBikeTest.Error_Msg(TC_001_NewBikeTest.java:243)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Error_Msg -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC_001_NewBikeTest@78411116]" started-at="2024-02-29T14:36:57 IST" name="tearDown" finished-at="2024-02-29T14:36:59 IST" duration-ms="1474" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC_001_NewBikeTest@7d151a]" started-at="2024-03-04T15:23:39 IST" name="tearDown" finished-at="2024-03-04T15:23:41 IST" duration-ms="1397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

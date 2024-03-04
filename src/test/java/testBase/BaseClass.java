@@ -91,10 +91,6 @@ public class BaseClass {
 		 p=new Properties();
 		 p.load(file);
 
-		//loading log4j 
-
-		logger=LogManager.getLogger(this.getClass());//Log4j
-
 		if(p.getProperty("execution_env").equalsIgnoreCase("remote")){
 			DesiredCapabilities capabilities=new DesiredCapabilities();
 			//os
@@ -143,4 +139,15 @@ public class BaseClass {
 		driver.quit();
 	}
 
+//	public static Logger getlogger() {
+//		//loading log4j 
+//
+//				logger=LogManager.getLogger();//Log4j
+//				return logger;
+//	}
+	public static Logger getlogger() {
+		logger=LogManager.getLogger();
+		return logger;
+	}
+	
 }

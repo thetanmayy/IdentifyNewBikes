@@ -22,19 +22,20 @@ public class TC_001_NewBikeTest extends BaseClass{
 	public static For_Screenshot ss = new For_Screenshot();
 	public static For_ReadWriteExcel RWE = new For_ReadWriteExcel();
 	
-	//java -jar selenium-server-4.18.1.jar standalone
+	//java -jar selenium-server-4.18.1.jar standalone    //grid
+	// java -jar jenkins.war
 	
 	//**************************************************************************//
 	@Test(priority = 1)//, groups = { "Smoke", "Regression" })
 	public static void newBike() throws InterruptedException
 	{
 		
-		logger.info("first log");
+		getlogger().info("first log");
 		HB=new HondaBike(driver);
 		HB.dropDown();
 		ss.screenshot("newBike");
 		Assert.assertEquals(HB.upcomingBike.isDisplayed(), true);
-		
+		getlogger().info("first log");
 		
 	}
 	
@@ -42,33 +43,36 @@ public class TC_001_NewBikeTest extends BaseClass{
 	@Test(priority = 2)//, groups = { "Smoke", "Regression" })
 	public static void upcomingBike() throws InterruptedException
 	{
-		
+		getlogger().info("first log");
 		HB=new HondaBike(driver);
 		HB.clickUpcominBike();
 		String name = driver.getTitle();
 		System.out.println(name);
-		String expected = "Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels";
+		String expected = "Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News";//Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels
 		Assert.assertEquals(expected, name);
 		
 		
 		wait.until(ExpectedConditions.visibilityOf(HB.manufacturer));
 		ss.screenshot("upcomingBike");
+		
 	}
 	
 	//**************************************************************************//
 	@Test(priority = 3)//, groups = { "Smoke", "Regression" })
 	public static void manufacture_select()
 	{
+		
 		HB=new HondaBike(driver);
 		HB.selectManufacturer();
 		
 		String name = driver.getTitle();
 		System.out.println(name);
 		
-		String expected = "Honda Upcoming Bikes in India in India 2024-25, Check Price, Launch Date, Specs @ ZigWheels";
+		String expected = "Honda Upcoming Bikes in India - Check Price, Launch Date, Images and Latest News";
 		Assert.assertEquals(expected,name);
 		
 		ss.screenshot("manufacture_select");
+		
 	}
 	
 	//**************************************************************************//
@@ -239,6 +243,9 @@ public class TC_001_NewBikeTest extends BaseClass{
 		LG.show_error();
 		String expectedMessege = "Enter a valid email or phone number";
 		Assert.assertEquals(LG.show_error(), expectedMessege);
+		System.out.println("Error Message for invalid Email ID ");
+		System.out.println(LG.show_error());
+
 		ss.screenshot("Error_Msg");
 		
 	}

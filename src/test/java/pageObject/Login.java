@@ -23,7 +23,7 @@ public class Login extends BasePage{
 	@FindBy(xpath = "//img[@id='forum_login_cover_image_sm']")  ////img[@id='forum_login_cover_image_sm'] //div[@id='des_lIcon']
 	public static WebElement LoginButton;
 	
-	@FindBy(xpath = "//span[contains(text(),'Google')]")  
+	@FindBy(xpath = "//span[normalize-space()='Google']")  ////span[@class='lgn-sp s ggle']
 	public static WebElement GoogleButton;
 	
 	@FindBy(xpath = "//input[@type='email']")
@@ -44,7 +44,9 @@ public class Login extends BasePage{
 	}
 	public void clickGoogle()
 	{
-		GoogleButton.click();
+		Actions action=new Actions(driver);
+		action.moveToElement(GoogleButton).click().perform();
+		//GoogleButton.click();
 	}
 	public String handlingFrame()
 	{
@@ -73,7 +75,6 @@ public class Login extends BasePage{
 	public String show_error()
 	{
 		ErrorMsg = driver.findElement(By.xpath("//div[contains(text(),'Enter a valid')]")).getText();//getting error message
-    	System.out.println("\nError Message for invalid Email ID \n"+ ErrorMsg);
     	return ErrorMsg;
 	}
 	
